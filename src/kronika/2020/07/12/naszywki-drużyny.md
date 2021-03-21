@@ -3,7 +3,7 @@ title: Plakietki drużyny
 category:
   - oboz2020
 author: Franciszek Kieliszewski
-date: 2021-07-12T15:47:00.000Z
+date: 2020-07-12T15:47:00.000Z
 ---
 ![Zdjęcie plakietek](img_1519.jpg)
 
