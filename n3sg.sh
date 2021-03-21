@@ -24,6 +24,9 @@ dst="$2"
 title="$3"
 url="$4"
 
+rm -r $dst || true
+mkdir -p $dst
+
 echo "Building..."
 
 ## Bootstrap directory structure from $src into $dst
@@ -33,13 +36,14 @@ done
 
 ## Copy non-markdown files
 for f in `cd $src && find . -type f ! -name '*.md' ! -name 'index.md' ! -name '.' ! -path '*/_*'`; do
+  echo "C $f"
   cp $src/$f $dst/$f
 done
 
 ## Index page generation
 cat $src/_header.html > $dst/index.html
 [ -f $src/index.md ] && markdown $src/index.md >> $dst/index.html
-echo "<ul>" >> $dst/index.html
+echo "<div class=\"content post-list\">" >> $dst/index.html
 
 ## RSS generation
 cat > $dst/rss.xml << EOF
@@ -54,25 +58,54 @@ cat > $dst/rss.xml << EOF
 EOF
 
 ## For all markdown files
-for f in `cd $src && find . -type f -name '*.md' ! -name 'index.md' ! -name '.' ! -path '*/_*'`; do
+for f in `cd $src && find . -type f -name '*.md' ! -name 'index.md' ! -path './kronika*'`; do
 
   echo "> $f"
+  page=${f%\.*}
+  ## HTML
+  cat $src/_header.html > $dst/$page.html
+  echo "<div class=\"content\">" >> $dst/$page.html
+  markdown $src/$f >> $dst/$page.html
+  echo "</div>" >> $dst/$page.html
+  cat $src/_footer.html >> $dst/$page.html
+
+done
+
+## For markdown files in `kronika`
+for f in `cd $src && find . -type f -wholename './kronika/*.md' ! -name 'index.md' ! -name '.' ! -path '*/_*' | sort -r`; do
+
+  echo ">> $f"
 
   ## Meta extraction
   title=`sed -n '/---/,/---/p' $src/$f | grep title | cut -d':' -f2`
   author=`sed -n '/---/,/---/p' $src/$f | grep author | cut -d':' -f2`
+  photo=`grep "!\[.*\]\(.*\)" $src/$f | head -n 1 | cut -d "(" -f2 | cut -d ")" -f1`
+  [ -z $photo ] && photo="/assets/default_tree.jpg"
+  description=`grep -E "^[A-Z]" $src/$f | grep -v "|" | head -n 1 | cut -d" " -f1-30`
   date=`git log -n 1 --date="format:%d-%m-%Y %H:%M:%SZ" --pretty=format:%ad -- $src/$f`
-  page=$(basename $f .md)
+  page=${f%\.*}
 
   ## HTML
   cat $src/_header.html > $dst/$page.html
-  echo "<h1>$title</h1>" >> $dst/$page.html
-  echo "<p class=\"author\">Autor: <span class=\"value\">$author</span></p><p class=\"date\">Ostatnia zmiana: <span class=\"value\"><time>$date</time></span></p>" >> $dst/$page.html
+  echo "<article class=\"kronika\">" >> $dst/$page.html
   markdown $src/$f >> $dst/$page.html
+  echo "</article>" >> $dst/$page.html
   cat $src/_footer.html >> $dst/$page.html
 
   ## Add to index
-  echo "<li class=\"link\"><a href=\"$page.html\">$title</a></li>" >> $dst/index.html
+  cat >> $dst/index.html << EOF
+<div class="post-link">
+  <a href="$page.html">
+    <div>
+      <div class="image" style="background-image: url('$photo')"></div>
+      <div class="post-container">
+        <h4 class="post-title">$title</h4>
+        <p class="post-description">$description</p>
+      </div>
+    </div>
+  </a>
+</div>
+EOF
 
   ## Add to rss
   cat >> $dst/rss.xml << EOF
@@ -91,7 +124,7 @@ EOF
 done
 
 ## Close tags
-echo "</ul>" >> $dst/index.html
+echo "</div>" >> $dst/index.html
 cat $src/_footer.html >> $dst/index.html
 echo "</channel></rss>" >> $dst/rss.xml
 
