@@ -97,7 +97,10 @@ for f in `cd $src && find . -type f -wholename './kronika/*.md' ! -name 'index.m
   title=`sed -n '/---/,/---/p' $src/$f | grep title | cut -d':' -f2`
   author=`sed -n '/---/,/---/p' $src/$f | grep author | cut -d':' -f2`
   photo=`grep "!\[.*\]\(.*\)" $src/$f | head -n 1 | cut -d "(" -f2 | cut -d ")" -f1`
-  [ -z $photo ] && photo="/assets/default_tree.jpg"
+  if ! echo $photo | grep "^http" > /dev/null; then
+    [ -z $photo ] && photo="/assets/default_tree.jpg"
+    [ ! -f $dst/$photo ] && photo="$(dirname $f)/$photo"
+  fi
   description=`grep -E "^[A-Z]" $src/$f | grep -v "|" | head -n 1 | cut -d" " -f1-30`
   date=`git log -n 1 --date="format:%d-%m-%Y %H:%M:%SZ" --pretty=format:%ad -- $src/$f`
   page=${f%\.*}
@@ -114,7 +117,7 @@ for f in `cd $src && find . -type f -wholename './kronika/*.md' ! -name 'index.m
 <div class="post-link">
   <a href="$page.html">
     <div>
-      <div class="image" style="background-image: url('$(dirname $f)/$photo')"></div>
+      <div class="image" style="background-image: url('$photo')"></div>
       <div class="post-container">
         <h4 class="post-title">$title</h4>
         <p class="post-description">$description</p>
