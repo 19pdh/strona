@@ -2,9 +2,10 @@
 title: Plakietki drużyny
 category:
   - oboz2020
+author: Franciszek Kieliszewski
+date: 2021-07-12T15:47:00.000Z
 ---
-
-![Zdjęcie plakietek](https://lh3.googleusercontent.com/pw/ACtC-3cSvlIfqIqHSlvejTXYm4I2UfXCE2EeVlqXp0cWGWpPIe90RbarckERrEddkkj3wpMvmOpWgDITdDm4k2DT0vEKQhb-pjR6w8FcG-7eWvfoP-ZoZ-mAy1GgioVIUxdrXk3a5VTMiQgm5RNE9CPGBN_D=w854-h640-no)
+![Zdjęcie plakietek](img_1519.jpg)
 
 # Plakietki drużyny
 
