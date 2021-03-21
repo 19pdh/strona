@@ -2,9 +2,25 @@
 
 start=$(date +%s.%N)
 
+# jekyll-cache is cached by netlify plugin
+mkdir -p .jekyll-cache
+
+## lowdown
+if [ ! -f .jekyll-cache/lowdown ]; then
+  wget https://kristaps.bsd.lv/lowdown/snapshots/lowdown.tar.gz
+  tar xf lowdown.tar.gz
+  cd lowdown-*
+  ./configure
+  make
+  cp lowdown ../.jekyll-cache
+  cd ..
+fi
+
+PATH=".jekyll-cache:$PATH"
+
 markdown() {
   tail -n +$(($(sed -n '/---/,/---/p' $1 | wc -l)+1)) $1 | \
-    awk -f ./awkdown -v esc=false
+    lowdown --html-no-skiphtml --html-no-escapehtml
 }
 
 usage() {

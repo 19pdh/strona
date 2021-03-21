@@ -119,11 +119,14 @@ main > p {
 
 article img {
   display: block;
-  margin: 0 auto;
+  margin: 1em auto;
   width: 100%;
 }
 
 article.kronika {
+  padding: 2em 1em;
+  max-width: 800px;
+  margin: 0 auto;
   text-align: left;
 }
 
