@@ -1,8 +1,9 @@
 ---
 title: Moja próba na ćwika
+author: Jan Waligóra
+date: 2021-03-21T16:45:21.871Z
 ---
-
-![Zdjęcie Jody z Waldemarem Witkowskim](https://lh3.googleusercontent.com/pw/ACtC-3eR0bSYUr9edI6_yHi6a-vavpSWGBCRPBcCy60Z4gme72dAiTgbe-IKYIf-Qy_M6DNOYl2jSBbM_APLUaYCYbj45F5WnSLSRMQEYXsKNphUffEObIXsDxUdu2TPXpTSapi_lzaX9zoRfxP19rHa-oo_=w818-h378-no)
+![Zdjęcie Jody z Waldemarem Witkowskim](joda.jpg)
 
 # Moja próba na ćwika
 
@@ -29,7 +30,6 @@ Wywiad:
   <source src="../wywiad-z-prezydentem.m4a" type="audio/mp4">
   <source src="../wywiad-z-prezydentem.mp3" type="audio/mpeg">
 </audio>
-
 
 ## Część 4: Epilog
 
