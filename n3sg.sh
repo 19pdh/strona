@@ -51,7 +51,7 @@ for f in `cd $src && find . -type d ! -name '.' ! -path '*/_*'`; do
 done
 
 ## Copy non-markdown files
-for f in `cd $src && find . -type f ! -name '*.md' ! -name 'index.md' ! -name '.' ! -path '*/_*'`; do
+for f in `cd $src && find . -type f ! -name '*.md' ! -name 'index.md' ! -name '.' ! -path './_*'`; do
   echo "C $f"
   cp $src/$f $dst/$f
 done
