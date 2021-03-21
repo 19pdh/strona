@@ -1,13 +1,13 @@
 ---
 title: Szybowiec
 author: Józef Rumatowski
-date: 2020-01-14T17:12:00.000Z
+date: 2021-01-16T17:12:00.000Z
 ---
 ![szybowiec](photo_2021-01-16_19-25-32.jpg)
 
 # Szybowce
 
-14.01.2021 | Józef Rumatowski
+16.01.2021 | Józef Rumatowski
 
 Gdy odebrałem wiadomość, zdziwiłem się. Zbiórka 2 godziny? Mieliśmy się spotkać u Patryka, więc nazajutrz wsiadłem w autobus i dojechawszy do celu stanąłem przed furtką, przed którą stał również Paweł. Furtka zabrzęczała. Weszliśmy do garażu. Po wejściu okazało się, że będziemy robić samoloty z lekkiej pianki.
 
