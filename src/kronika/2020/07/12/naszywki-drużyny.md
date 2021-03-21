@@ -1,5 +1,5 @@
 ---
-title: Plakietki drużyny
+title: Naszywki druzyny
 category:
   - oboz2020
 author: Franciszek Kieliszewski
