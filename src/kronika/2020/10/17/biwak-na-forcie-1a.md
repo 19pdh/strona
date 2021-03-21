@@ -1,7 +1,7 @@
 ---
 title: Biwak na forcie 1A
 author: Antoni Dąbrowski
-date: 2020-09-06T16:09:00.000Z
+date: 2020-10-17T16:09:00.000Z
 ---
 ![Jajecznica na śniadanie](pasted-image-0-4-.png)
 
