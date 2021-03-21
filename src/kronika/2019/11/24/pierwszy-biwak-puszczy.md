@@ -1,7 +1,7 @@
 ---
 title: Pierwszy biwak Puszczy
 author: Filip Olszewski
-date: 2021-03-21T16:27:36.688Z
+date: 2019-11-24T16:27:36.688Z
 ---
 ![Plaster pod uchiem igielnym](img_0624.jpg)
 
