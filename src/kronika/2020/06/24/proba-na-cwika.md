@@ -1,7 +1,7 @@
 ---
 title: Moja próba na ćwika
 author: Jan Waligóra
-date: 2021-03-21T16:45:21.871Z
+date: 2020-06-24T15:45:00.000Z
 ---
 ![Zdjęcie Jody z Waldemarem Witkowskim](joda.jpg)
 
