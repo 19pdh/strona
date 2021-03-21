@@ -1,5 +1,5 @@
 ---
-title: Szybowiec
+title: Szybowce
 author: Józef Rumatowski
 date: 2021-01-16T17:12:00.000Z
 ---
