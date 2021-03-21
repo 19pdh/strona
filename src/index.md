@@ -69,7 +69,7 @@ author: admin
 </section>
 
 
-# Kronika 19 PDH Puszcza
+<h1 id="kronika">Kronika 19 PDH Puszcza</h1>
 
 <p style="text-align: left">Poniżej znajdziesz elektroniczną kronikę 19 PDH Puszcza prowadzoną przez druhów z naszej drużyny. Opisujemy w niej historie i przygody jakie przeżyliśmy i przeżywamy na zbiórkach, wyjazdach, obozach.</p>
 

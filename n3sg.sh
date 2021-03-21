@@ -40,6 +40,21 @@ for f in `cd $src && find . -type f ! -name '*.md' ! -name 'index.md' ! -name '.
   cp $src/$f $dst/$f
 done
 
+## For all markdown files
+for f in `cd $src && find . -type f -name '*.md' ! -name 'index.md' ! -path './kronika*'`; do
+
+  echo "> $f"
+  page=${f%\.*}
+  ## HTML
+  cat $src/_header.html > $dst/$page.html
+  echo "<div class=\"content\">" >> $dst/$page.html
+  markdown $src/$f >> $dst/$page.html
+  echo "</div>" >> $dst/$page.html
+  cat $src/_footer.html >> $dst/$page.html
+
+done
+
+
 ## Index page generation
 cat $src/_header.html > $dst/index.html
 [ -f $src/index.md ] && markdown $src/index.md >> $dst/index.html
@@ -56,20 +71,6 @@ cat > $dst/rss.xml << EOF
 <link>$url</link>
 <lastBuildDate>$(date -R)</lastBuildDate>
 EOF
-
-## For all markdown files
-for f in `cd $src && find . -type f -name '*.md' ! -name 'index.md' ! -path './kronika*'`; do
-
-  echo "> $f"
-  page=${f%\.*}
-  ## HTML
-  cat $src/_header.html > $dst/$page.html
-  echo "<div class=\"content\">" >> $dst/$page.html
-  markdown $src/$f >> $dst/$page.html
-  echo "</div>" >> $dst/$page.html
-  cat $src/_footer.html >> $dst/$page.html
-
-done
 
 ## For markdown files in `kronika`
 for f in `cd $src && find . -type f -wholename './kronika/*.md' ! -name 'index.md' ! -name '.' ! -path '*/_*' | sort -r`; do
