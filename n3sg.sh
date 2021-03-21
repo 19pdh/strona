@@ -114,7 +114,7 @@ for f in `cd $src && find . -type f -wholename './kronika/*.md' ! -name 'index.m
 <div class="post-link">
   <a href="$page.html">
     <div>
-      <div class="image" style="background-image: url('$photo')"></div>
+      <div class="image" style="background-image: url('$(dirname $f)/$photo')"></div>
       <div class="post-container">
         <h4 class="post-title">$title</h4>
         <p class="post-description">$description</p>
