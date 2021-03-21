@@ -2,7 +2,6 @@
 title: Kronika
 author: admin
 ---
-
 <style>
 .joinus {
   position: relative;
@@ -58,6 +57,7 @@ author: admin
   }
 }
 </style>
+
 <section class="joinus">
   <div class="heading">
     <div class="title">
@@ -67,10 +67,8 @@ author: admin
   <a href="/kontakt.html" class="button">Dołącz do nas</a>
 </section>
 
-
 <h1 id="kronika">Kronika 19 PDH Puszcza</h1>
 
 <p style="text-align: left">Poniżej znajdziesz elektroniczną kronikę 19 PDH Puszcza prowadzoną przez druhów z naszej drużyny. Opisujemy w niej historie i przygody jakie przeżyliśmy i przeżywamy na zbiórkach, wyjazdach, obozach.</p>
 
-
-<p><a href="/kronika/rss.xml"><img alt="" src="/assets/rss.svg" style="height:1em" />RSS</a></p>
+<p><a href="/rss.xml"><img alt="" src="/assets/rss.svg" style="height:1em" />RSS</a></p>
