@@ -6,7 +6,6 @@ author: admin
 <style>
 .joinus {
   position: relative;
-  top: -1ex;
   padding: 160px 20%;
   background-image: url(/assets/bg.jpg);
   background-size: cover;

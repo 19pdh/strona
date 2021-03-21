@@ -2,33 +2,64 @@ backend:
   name: git-gateway
 
 publish_mode: editorial_workflow
-site_url: https://n3sg-demo.netlify.app
-locale: 'en'
+site_url: https://nowa-puszcza.netlify.app
+locale: 'pl'
 
 media_folder: 'src/media'
 public_folder: '/media'
 
 collections:
   - name: posts
-    label: 'posts'
-    label_singular: 'post'
-    folder: 'src'
+    label: 'wpisy'
+    label_singular: 'wpis'
+    folder: 'src/kronika'
     slug: '{{title}}'
-    path: '{{slug}}'
-    preview_path: '{{slug}}.html'
+    path: 'kronika/{{year}}/{{month}}/{{day}}/{{slug}}'
+    preview_path: 'kronika/{{year}}/{{month}}/{{day}}/{{title}}'
+    preview_path_date_field: 'date'
     create: true
     editor:
       preview: true
     fields:
-      - label: 'Title'
+      - label: 'Tytuł'
         name: title
         widget: string
         required: true
-      - label: 'author'
+      - label: 'Autor'
         name: author
         widget: string
         required: true
+      - label: 'Data'
+        name: 'date'
+        widget: "datetime"
       - label: 'Wpis'
         name: body
         widget: markdown
         required: true
+
+  - name: "pages"
+    label: "Strony"
+    files:
+      - label: "Do pobrania"
+        name: "download"
+        file: "src/do-pobrania.md"
+        fields:
+          - label: "Treść"
+            name: "body"
+            widget: "markdown"
+
+      - label: "Kontakt"
+        name: "contact"
+        file: "src/kontakt.md"
+        fields:
+          - label: "Treść"
+            name: "body"
+            widget: "markdown"
+
+      - label: "Kronika"
+        name: "index"
+        file: "src/index.md"
+        fields:
+          - label: "Treść"
+            name: "body"
+            widget: "markdown"
