@@ -1,7 +1,9 @@
 ---
 title: Biwak przekazaniowy
+author: Jan Waligóra
+date: 2019-09-28T15:18:18.440Z
 ---
-![Zdjęcie drużyny świeżo po przekazaniu](https://lh3.googleusercontent.com/bpueIMwZ5oohztLmXRer3n_VuxVOUuI6kzMZFuXmq7zJuvJuKUo1EcFr-qByN4UBkvXwCL0IJ8HuYVw5TXNdLO40gNo-S0rT5HVilNqgHrz6OTACs2oyMwO4a_K3YNBcIrwCrI1a=w1262-h946-no)
+![Zdjęcie drużyny świeżo po przekazaniu](IMG_0489.JPG)
 
 # Biwak przekazaniowy
 
@@ -19,33 +21,30 @@ Tymczasem komenda obecna, przyszła, ZZ obecny i przeszli do wnętrza ww. fortu 
 
 Komenda:
 
-1.  Witold (drużynowy)
-2.  Antoni (przyboczny)
-3.  Dominik (przyboczny)
+1. Witold (drużynowy)
+2. Antoni (przyboczny)
+3. Dominik (przyboczny)
 
 Zastępy:
 
-1.  Rybołowy (zastępowy Antek)
-
-2.  Bernikle (zastępowy Ignacy)
-
-3.  Kormorany (zastępowy Wojtek)
+1. Rybołowy (zastępowy Antek)
+2. Bernikle (zastępowy Ignacy)
+3. Kormorany (zastępowy Wojtek)
 
 #### Puszcza:
 
 Komenda:
-1.  Patryk Niedźwiedziński (drużynowy)
-2.  Jan B. Waligóra (przyboczny)
-3.  Jacek (członek Korpusu Hufca \[dalej: KH\])
-4.  Rafał (członek KH)
+
+1. Patryk Niedźwiedziński (drużynowy)
+2. Jan B. Waligóra (przyboczny)
+3. Jacek (członek Korpusu Hufca \[dalej: KH])
+4. Rafał (członek KH)
 
 Zastępy:
 
-1.  I próbny (zastępowy Jan Paweł)
-
-2.  II próbny (zastępowy Plaster)
-
-3.  Wydry (zastępowy Franek)
+1. I próbny (zastępowy Jan Paweł)
+2. II próbny (zastępowy Plaster)
+3. Wydry (zastępowy Franek)
 
 Po radzie szeregowi zostali obudzeni i po krótkiej grze testującej zgranie i sprawne oko zastępy dostały się do wnętrza fortu, gdzie przy uroczystym kominku, w towarzystwie kilku bratniaków, odśpiewaliśmy kilka piosenek. Po części artystycznej przyszedł czas na apel przekazaniowy, na którym obecni członkowie Puszczy otrzymali ciemno-hebanowe chusty z limonkową lamówką. Były już wtedy drużynowy- Jakub Matusewicz- wygłosił przemówienie i pod osłoną nocy odprowadziliśmy szeregowych i ZZ do namiotów i odbyliśmy komendami małą after-radę. W końcu i nami owładnął Hypnos.
 
