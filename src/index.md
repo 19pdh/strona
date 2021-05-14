@@ -71,4 +71,4 @@ author: admin
 
 <p style="text-align: left">Poniżej znajdziesz elektroniczną kronikę 19 PDH Puszcza prowadzoną przez druhów z naszej drużyny. Opisujemy w niej historie i przygody jakie przeżyliśmy i przeżywamy na zbiórkach, wyjazdach, obozach.</p>
 
-<p><a href="/rss.xml"><img alt="" src="/assets/rss.svg" style="height:1em" />RSS</a></p>
+<p><a href="/rss.xml"><img alt="" src="/assets/rss.svg" style="height:1em" />RSS</a> | <a href="https://zhr.niedzwiedzinski.cyou/rozkazy/">Archiwum rozkazów</a></p>

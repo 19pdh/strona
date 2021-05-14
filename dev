@@ -9,10 +9,10 @@ SITENAME="19 PDH Puszcza"
 SITEURL=http://localhost:5000
 HTTPCMD="nix run nixos.httplz -c httplz dest"
 
-$(sleep 1 && $HTTPCMD) &!
+$(sleep 1 && $HTTPCMD) &
 
 while :
 do
-  find . -type f ! -path '*/.*' |
+  find . -type f ! -path '*/.*' | \
   entr -d ./n3sg.sh $SRC $DEST $SITENAME $SITEURL
 done
