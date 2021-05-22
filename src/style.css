@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('/assets/font/roboto_slab/RobotoSlab-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --primary: #000;
   --bg-primary: #fff;
