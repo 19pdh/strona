@@ -14,5 +14,5 @@ $(sleep 1 && $HTTPCMD) &
 while :
 do
   find . -type f ! -path '*/.*' | \
-  entr -d ./n3sg.sh $SRC $DEST $SITENAME $SITEURL
+  entr -d ./n3sg.sh $SRC $DEST "$SITENAME" "$SITEURL"
 done

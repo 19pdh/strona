@@ -37,7 +37,7 @@ test -n "$4" || usage
 
 src="$1"
 dst="$2"
-title="$3"
+site_title="$3"
 url="$4"
 
 rm -r $dst || true
@@ -62,7 +62,7 @@ for f in `cd $src && find . -type f -name '*.md' ! -name 'index.md' ! -path './k
   echo "> $f"
   page=${f%\.*}
   ## HTML
-  cat $src/_header.html > $dst/$page.html
+  sed "s/<title><\/title>/<title>$site_title<\/title>/" $src/_header.html > $dst/$page.html
   echo "<div class=\"content\">" >> $dst/$page.html
   markdown $src/$f >> $dst/$page.html
   echo "</div>" >> $dst/$page.html
@@ -72,7 +72,7 @@ done
 
 
 ## Index page generation
-cat $src/_header.html > $dst/index.html
+sed "s/<title><\/title>/<title>$site_title<\/title>/" $src/_header.html > $dst/index.html
 [ -f $src/index.md ] && markdown $src/index.md >> $dst/index.html
 echo "<div class=\"content post-list\">" >> $dst/index.html
 
@@ -106,7 +106,7 @@ for f in `cd $src && find . -type f -wholename './kronika/*.md' ! -name 'index.m
   page=${f%\.*}
 
   ## HTML
-  cat $src/_header.html > $dst/$page.html
+  sed "s/<title><\/title>/<title>$title - $site_title<\/title>/" $src/_header.html > $dst/$page.html
   echo "<article class=\"kronika\">" >> $dst/$page.html
   markdown $src/$f >> $dst/$page.html
   echo "</article>" >> $dst/$page.html
