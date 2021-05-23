@@ -3,6 +3,7 @@
   src: url('/assets/font/roboto_slab/RobotoSlab-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 :root {
