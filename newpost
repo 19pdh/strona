@@ -1,0 +1,39 @@
+#!/bin/sh
+
+dir=$(dirname $(readlink -f $0))/src/kronika
+
+read -p "Tytuł: " title 
+read -p "Data [RRRR/MM/DD]: " data 
+read -p "Autor: " author 
+
+year=`echo $data | cut -d/ -f1`
+month=`echo $data | cut -d/ -f2`
+day=`echo $data | cut -d/ -f3`
+link=`echo $title | iconv -f utf-8 -t ascii//translit`
+
+[ -z $day ] && echo "wrong day" && exit 1
+[ -z $month ] && echo "wrong month" && exit 1
+[ -z $year ] && echo "wrong year" && exit 1
+
+mkdir -p $dir/$year/$month/$day
+
+file=$dir/$year/$month/$day/$link.md
+
+if [ -f $file ]; then
+	echo File $file exists
+	vim $file
+else
+	cat > $file << EOF
+---
+title: $title
+author: $author
+date: $year-$month-$day
+---
+
+# $title
+
+$day.$month.$year | $author
+
+EOF
+	vim $file
+fi
