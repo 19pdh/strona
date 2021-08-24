@@ -6,7 +6,7 @@
 package = "netlify-plugin-jekyll-cache"
 
 [[redirects]]
- from = "/kuchnia"
- to = "https://zhr.niedzwiedzinski.cyou/kuchnia/"
+ from = "/kuchnia/*"
+ to = "https://zhr.niedzwiedzinski.cyou/kuchnia/:splat"
  status = 200
  force = true
