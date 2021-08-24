@@ -4,3 +4,9 @@
 
 [[plugins]]
 package = "netlify-plugin-jekyll-cache"
+
+[[redirects]]
+ from = "/kuchnia"
+ to = "https://zhr.niedzwiedzinski.cyou/kuchnia/"
+ status = 200
+ force = true
