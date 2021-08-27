@@ -1,10 +1,4 @@
-@font-face {
-  font-family: 'Roboto Slab';
-  src: url('/assets/font/roboto_slab/RobotoSlab-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 :root {
   --primary: #000;
