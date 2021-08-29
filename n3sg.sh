@@ -89,7 +89,7 @@ cat > $dst/rss.xml << EOF
 EOF
 
 ## For markdown files in `kronika`
-for f in `cd $src && find . -type f -wholename './kronika/*.md' ! -name 'index.md' ! -name '.' ! -path '*/_*' | sort -r`; do
+for f in `cd $src && find kronika -type f -wholename 'kronika/*.md' ! -name 'index.md' | sort -r`; do
 
   echo ">> $f"
 
@@ -104,6 +104,7 @@ for f in `cd $src && find . -type f -wholename './kronika/*.md' ! -name 'index.m
   description=`grep -E "^[A-Z]" $src/$f | grep -v "|" | head -n 1 | cut -d" " -f1-30`
   date=`git log -n 1 --date="format:%d-%m-%Y %H:%M:%SZ" --pretty=format:%ad -- $src/$f`
   page=${f%\.*}
+  folder=$(dirname $page)
 
   ## HTML
   sed "s/<title><\/title>/<title>$title - $site_title<\/title>/" $src/_header.html > $dst/$page.html
@@ -136,7 +137,7 @@ EOF
   <title>$title</title>
   <description><![CDATA[
 EOF
-  markdown $src/$f >> $dst/rss.xml
+markdown $src/$f | sed 's;\(img src="\)\([\.a-zA-Z0-9]*\)";\1'"$url/$folder/"'\2";g' >> $dst/rss.xml
   cat >> $dst/rss.xml << EOF
   ]]></description>
 </item>
