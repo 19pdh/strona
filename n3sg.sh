@@ -137,7 +137,9 @@ EOF
   <title>$title</title>
   <description><![CDATA[
 EOF
-markdown $src/$f | sed 's;\(img src="\)\([\.a-zA-Z0-9]*\)";\1'"$url/$folder/"'\2";g' >> $dst/rss.xml
+  # Zamiana linków na pełne ścieżki
+  # szycie.jpg => $url/kronika/2021/06/17/szycie.jpg
+  markdown $src/$f | sed 's;\(img src="\)\([^"]*\)";\1'"$url/$folder/"'\2";g' >> $dst/rss.xml
   cat >> $dst/rss.xml << EOF
   ]]></description>
 </item>
