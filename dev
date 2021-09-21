@@ -7,7 +7,7 @@ SRC=src
 DEST=dest
 SITENAME="19 PDH Puszcza"
 SITEURL=http://localhost:5000
-HTTPCMD="nix run nixos.httplz -c httplz dest"
+HTTPCMD="simple-http-server dest"
 
 $(sleep 1 && $HTTPCMD) &
 
