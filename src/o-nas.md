@@ -1,3 +1,6 @@
+<img src="/assets/naszywka.png" alt="Logo drużyny" style="height: 200px"><br>
+
+
 # 19 Poznańska Drużyna Harcerzy "Puszcza"
 
 Jakiś czas temu na [wrześniowym biwaku Bindugi](/kronika/2019/09/28/biwak-przekazaniowy.html) od drużyny odłączyły się 3 zastępy. Te 3 zastępy razem z Patrykiem na czele [założyły nową drużynę](/kronika/2020/07/20/teatr.html#&#8220;Puszcza%22) - Puszczę.
