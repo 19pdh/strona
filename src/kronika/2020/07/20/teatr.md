@@ -23,7 +23,7 @@ Potem wszystko działo się samo, Kiep świetnie wystąpił w roli szamana. Rozp
 Zresztą możecie samemu zobaczyć. Niestety w tym roku nam się trafił las o słabej akustyce, dlatego polecamy słuchawki 📢 i napisy.
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IKhvw2TY65o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; height: 50vmin; max-height: 450px; position: sticky; top: 0;"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IKhvw2TY65o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; height: 50vmin; max-height: 450px; top: 0;"></iframe>
 
 <code>
 <style>
@@ -59,7 +59,7 @@ Na początku była puszcza
 
 > *Wychodzą wszyscy przebrani za drzewa.*
 
-A w puszczy plemienia Shauni, prawowici synowie i córy matki natury, zginający karki tylko wobec praw przyrody.
+A w puszczy indianie plemienia Shauni, prawowici synowie i córy matki natury, zginający karki tylko wobec praw przyrody.
 
 > *Indianin wyskakuje zza krzaka, napina łuk i puszcza. Wybiega za scenę przy indiańskim okrzyku.*
 

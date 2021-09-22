@@ -184,7 +184,7 @@ footer img {
   color: #eee;
 }
 
-@media (max-width: 580px) {
+@media (max-width: 680px) {
   header > div {
     flex-direction: column;
     text-align: center;
