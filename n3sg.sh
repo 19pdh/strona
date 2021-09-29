@@ -82,7 +82,7 @@ cat > $dst/rss.xml << EOF
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
 <atom:link href="$url/rss.xml" rel="self" type="application/rss+xml" />
-<title>$title</title>
+<title>$site_title</title>
 <description></description>
 <link>$url</link>
 <lastBuildDate>$(date -R)</lastBuildDate>
