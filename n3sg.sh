@@ -102,7 +102,7 @@ for f in `cd $src && find kronika -type f -wholename 'kronika/*.md' ! -name 'ind
     [ ! -f $dst/$photo ] && photo="$(dirname $f)/$photo"
   fi
   description=`grep -E "^[A-Z]" $src/$f | grep -v "|" | head -n 1 | cut -d" " -f1-30`
-  date=`git log -n 1 --date="format:%d-%m-%Y %H:%M:%SZ" --pretty=format:%ad -- $src/$f`
+  date=$(date -R --date="$(git log -n 1 --date="format:%Y-%m-%d %H:%M:%S" --pretty=format:%ad -- $src/$f)")
   page=${f%\.*}
   folder=$(dirname $page)
 
