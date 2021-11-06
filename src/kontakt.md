@@ -2,7 +2,7 @@
 
 **Email**: 19pdh.puszcza@zhr.pl
 
-# Kontakt z drużynowy
+# Kontakt z drużynowym
 
 **Email**: patryk.niedzwiedzinski \[@] zhr.pl
 
