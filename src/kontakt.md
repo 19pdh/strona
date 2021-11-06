@@ -1,5 +1,9 @@
-# Kontakt z drużynowym
+# Kontakt
 
-**Email**: patryk.niedzwiedzinski [@] zhr.pl
+**Email**: 19pdh.puszcza@zhr.pl
 
-**Telegram**: [https://t.me/pniedzwiedzinski](https://t.me/pniedzwiedzinski)
+# Kontakt z drużynowy
+
+**Email**: patryk.niedzwiedzinski \[@] zhr.pl
+
+**Telegram**: <https://t.me/pniedzwiedzinski>
