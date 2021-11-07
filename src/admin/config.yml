@@ -2,7 +2,7 @@ backend:
   name: git-gateway
 
 publish_mode: editorial_workflow
-site_url: https://nowa-puszcza.netlify.app
+site_url: https://puszcza.netlify.app
 locale: 'pl'
 
 media_folder: 'src/media'
