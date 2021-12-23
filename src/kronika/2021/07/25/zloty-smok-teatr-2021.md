@@ -4,9 +4,14 @@ author: Joda & Kielon
 date: 2021-07-25
 ---
 
+![](IMG_1829.JPG)
+
 # Złoty smok - Teatr 2021
 
 25.07.2021 | Joda & Kielon
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CCzqEstddBQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; height: 50vmin; max-height: 450px; top: 0;"></iframe>
+
 
 <code>
 <style>
