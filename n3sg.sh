@@ -107,7 +107,8 @@ for f in `cd $src && find kronika -type f -wholename 'kronika/*.md' ! -name 'ind
   folder=$(dirname $page)
 
   ## HTML
-  sed "s/<title><\/title>/<title>$title - $site_title<\/title>/" $src/_header.html > $dst/$page.html
+  sed "s/<title><\/title>/<title>$title - $site_title<\/title>/" $src/_header.html \
+	  | sed "s/\(og:title\" content=\"\)/\1$title - /g" > $dst/$page.html
   echo "<article class=\"kronika\">" >> $dst/$page.html
   markdown $src/$f >> $dst/$page.html
   echo "</article>" >> $dst/$page.html
