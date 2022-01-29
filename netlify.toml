@@ -15,3 +15,8 @@ package = "netlify-plugin-jekyll-cache"
  from = "/harcdzielnia/*"
  to = "https://zhr.niedzwiedzinski.cyou/harcdzielnia/:splat"
  status = 301
+
+[[redirects]]
+ from = "/sprawnosci/*"
+ to = "https://zhr.niedzwiedzinski.cyou/sprawnosci/:splat"
+ status = 301
