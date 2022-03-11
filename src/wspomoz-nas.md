@@ -14,7 +14,7 @@ Jeżeli chcesz nam pomóc w inny sposób to zapraszamy do [kontaktu](/kontakt.ht
 
 ## Składki i darowizny
 
-Okręg Wielkopolski ZHR ustalilił wysokość składki członkowskiej na 16zł miesięcznie. Jeżeli istnieją jakieś problemy finansowe, to proszę się kontaktować, coś zaradzimy ;).
+Okręg Wielkopolski ZHR ustalił wysokość składki członkowskiej na 16zł miesięcznie. Jeżeli istnieją jakieś problemy finansowe, to proszę się kontaktować, coś zaradzimy ;).
 
 Dane do przelewu: **08 1090 1346 0000 0001 4747 7987**
 
