@@ -1,5 +1,5 @@
 ---
-title: Proba na cwika
+title: Próba na ćwika
 author: Jan Waligóra
 date: 2020-06-24T15:45:00.000Z
 ---
